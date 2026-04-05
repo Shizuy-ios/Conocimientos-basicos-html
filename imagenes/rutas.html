@@ -1,28 +1,105 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <title>Rutas</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rutas en HTML</title>
+
+    <style>
+        body {
+            background: #1e1e2f;
+            color: white;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #00ffd5;
+        }
+
+        h2 {
+            color: #ffd700;
+            margin-top: 25px;
+        }
+
+        p {
+            line-height: 1.5;
+            margin-bottom: 10px;
+        }
+
+        a {
+            color: #00ffd5;
+            text-decoration: none;
+            display: block;
+            margin: 5px 0;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        img {
+            max-width: 300px;
+            display: block;
+            margin: 15px 0;
+            border-radius: 10px;
+        }
+
+        code {
+            background: rgba(255,255,255,0.1);
+            padding: 2px 5px;
+            border-radius: 5px;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Rutas</h1>
-    <h2>introduccion</h2>
-    <p>hay dos rutas, una relativa y otra absoluta</p>
-    <p>Ruta relativa : solo va a acceder a archivos de la misma carpeta con el puro nombre y tienes que llamarlo de distita manera dependiendo de la hubicacion del archivo</p>
-    <p>Ruta absoluta: no importa donde este el achivo, siempre va a ser lo mismo</p>
-    <h2>como moverse entre carpetas con rutas relativas</h2>
-    <p>antes de escribir el nombre del archivo, si tiene que buscar un archivo en una carpeta ant erior ej: rutas esta en la carpeta imagenes, pero queremos poner un enlace que va a listas; entonces escribimos a href="../listas.html"</p>
-    <a href="../Listas.html">Listas</a>
-    <p>si no se hace asi no funciona y el enlece no lo encuentra</p>
-    <a href="Listas.html">Listas</a>
-    <p>pero que pasa cuando es al revez, cuando queremos entrar a un archivo que esta una carpeta adelante de nosotros</p>
-    <p>en ese caso se escribe el a href=:" pero en vez de poner un ../ se escribe el nombre de la carpeta a href="ejemplo/ejemplo1.html"</p>
+
+    <h1>Rutas en HTML</h1>
+
+    <h2>Introducción</h2>
+    <p>Hay dos tipos de rutas: relativa y absoluta.</p>
+    <p>
+        <b>Ruta relativa:</b> accede a archivos de la misma carpeta usando solo el nombre,
+        o con "../" para retroceder carpetas según la ubicación del archivo.
+    </p>
+    <p>
+        <b>Ruta absoluta:</b> apunta siempre a la misma ubicación, sin importar dónde esté el archivo actual.
+    </p>
+
+    <h2>Cómo moverse entre carpetas con rutas relativas</h2>
+    <p>
+        Para acceder a un archivo en una carpeta anterior: si la página "rutas" está en la carpeta <b>imagenes</b> 
+        y quieres enlazar a <b>Listas.html</b>, escribes:
+    </p>
+    <code>&lt;a href="../Listas.html"&gt;Listas&lt;/a&gt;</code>
+    <a href="../Listas.html">Listas (correcto)</a>
+
+    <p>Si escribes solo "Listas.html" sin "../", el enlace no funciona:</p>
+    <a href="Listas.html">Listas (incorrecto)</a>
+
+    <p>
+        Para acceder a un archivo en una carpeta que está más adelante:
+    </p>
+    <p>Escribes el nombre de la carpeta seguido del archivo, por ejemplo:</p>
+    <code>&lt;a href="ejemplo/ejemplo1.html"&gt;Ejemplo 1&lt;/a&gt;</code>
     <a href="ejemplo/ejemplo1.html">Ejemplo 1</a>
-    <h2>resumen</h2>
-    <p>para retroceder una carptea es "../" para retroceder dos es "../../" para entrar a una carpeta pones "(nombre de la carpeta)/" para entrar a mas carpetas es "n(nombre de carpeta1)/(nombre de carpeta2)/" y asi consecutivamente</p>
-    <p>aqui el codigo</p>
-    <img src="codigo de rutas.png" alt="">
-    <h2>enlaces externos</h2>
-    <a href="../index.html">Pagina principal</a>
-    <a href="../basicos/img.html" class="imagenes">Para regresar a imagenes</a>
+
+    <h2>Resumen</h2>
+    <p>
+        Para retroceder una carpeta: <code>../</code><br>
+        Para retroceder dos: <code>../../</code><br>
+        Para entrar a una carpeta: <code>(nombre_de_carpeta)/</code><br>
+        Para entrar a carpetas consecutivas: <code>carpeta1/carpeta2/</code>
+    </p>
+
+    <p>Código de ejemplo:</p>
+    <img src="codigo de rutas.png" alt="Código ejemplo de rutas en HTML">
+
+    <h2>Enlaces externos</h2>
+    <a href="../index.html">Página principal</a>
+    <a href="../basicos/img.html">Regresar a Imágenes</a>
+
 </body>
 </html>

@@ -1,19 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <title>imagenes</title>
-</head>
-<body>
-    <h1>imagenes</h1>
-    <h2>imagenes en la misma carpeta</h2>
-    <p>Para agregar imagenes se ocupa el target img y simplemente el nombre de la imagen si esta en la misma carpeta (no se va a mostrar por que la imagen ya esta en otra carpeta para ver el codigo para vincular la imagen desde la otra carpeta ver el de rutas)</p>
-    <img src="../imagenes/fuck you.jpg" alt="fuck you" title="fuckyou">
-    <p>se hizo una correccion ya con los conocimientos adquiridos previamente pero mantuve el texto igual para que se mantenga la explicacion</p>
-    <img src="../imagenes/Screenshot 2026-04-03 002249.png" alt="">
-    <p>para entender el codigo de img valla al apartado de rutas en la carpeta imagen</p> <a href="../imagenes/rutas.html">Rutas</a>
-    <img src="../imagenes/code img.png" alt="">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imágenes</title>
 
-    <h2>pagina principal</h2>
-    <a href="../index.html">Pagina principal</a>
+    <style>
+        body {
+            background: #1e1e2f;
+            color: white;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #00ffd5;
+        }
+
+        h2 {
+            color: #ffd700;
+            margin-top: 30px;
+        }
+
+        p {
+            line-height: 1.5;
+        }
+
+        img {
+            max-width: 300px;
+            display: block;
+            margin: 15px 0;
+            border-radius: 10px;
+        }
+
+        a {
+            color: #00ffd5;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .box {
+            background: rgba(255,255,255,0.1);
+            padding: 15px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Imágenes</h1>
+
+    <div class="box">
+        <h2>Imágenes en la misma carpeta</h2>
+
+        <p>
+            Para agregar imágenes se usa la etiqueta <b>img</b>.
+            Si la imagen está en la misma carpeta, solo se escribe su nombre.
+        </p>
+
+        <!-- Se mantiene el nombre original -->
+        <img src="../imagenes/fuck you.jpg" alt="Imagen de ejemplo">
+
+        <p>
+            Se hizo una corrección con los conocimientos adquiridos previamente,
+            pero se mantuvo el texto original para conservar la explicación.
+        </p>
+
+        <img src="../imagenes/code img.png" alt="Captura de pantalla del ejemplo">
+
+        <p>
+            Para entender mejor el uso de rutas, visita este apartado:
+        </p>
+
+        <a href="../imagenes/rutas.html">Rutas</a>
+
+        <img src="../imagenes/code img.png" alt="Código de la etiqueta img">
+    </div>
+
+    <h2>Página principal</h2>
+    <a href="../index.html">Volver al inicio</a>
+
 </body>
 </html>

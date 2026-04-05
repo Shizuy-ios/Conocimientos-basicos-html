@@ -1,53 +1,123 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formularios</title>
+
+    <style>
+        body {
+            background: #1e1e2f;
+            color: white;
+            font-family: Arial;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #00ffd5;
+            text-align: center;
+        }
+
+        h2 {
+            color: #ffd700;
+            margin-top: 30px;
+        }
+
+        form, ol {
+            background: rgba(255,255,255,0.1);
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+        input {
+            margin: 5px 0;
+            padding: 5px;
+            border-radius: 5px;
+            border: none;
+        }
+
+        img {
+            max-width: 200px;
+            display: block;
+            margin: 10px 0;
+        }
+
+        a {
+            color: #00ffd5;
+        }
+    </style>
 </head>
+
 <body>
+
     <h1>Formularios</h1>
-    <h2>tipo de formularios</h2>
-    <p>dentro de los formularios hay inputs los cuales son de varias maneras pero el mas comun es de texto, se muestra a continuacion</p>
+
+    <h2>Tipo de formularios</h2>
+    <p>
+        Dentro de los formularios hay inputs, los cuales tienen varias formas.
+        El más común es el de texto:
+    </p>
+
     <form>
-        <input type="text" value="text">
+        <input type="text" placeholder="Texto">
     </form>
-    <img src="../imagenes/inputs.png" alt="">
-    <p>comunmente el input de texto viene acompañado de otro input el cual es el de enviar</p>
-    <input type="text" value="text">
-    <input type="submit">
-    <img src="../imagenes/input submit.png" alt="codigodel input submit">
-    <h2>tipos de inputs</h2>
+
+    <img src="../imagenes/inputs.png">
+
+    <p>
+        Comúnmente el input de texto viene acompañado de uno de enviar:
+    </p>
+
+    <form>
+        <input type="text" placeholder="Texto">
+        <input type="submit">
+    </form>
+
+    <img src="../imagenes/input submit.png">
+
+    <h2>Tipos de inputs</h2>
+
     <form>
         <ol>
-           <li> <input type="text" placeholder="text"> <img src="../imagenes/input text.png" alt=""></li>
-            <li><input type="email" placeholder="email@.com"> <img src="../imagenes/input email.png" alt=""></li>
-            <li><input type="password" placeholder="password"> <img src="../imagenes/input pasword.png" alt=""></li>
-            <li><input type="checkbox"><img src="../imagenes/checbox.png" alt=""></li>
-            <li><input type="radio"><img src="../imagenes/rad.png" alt=""></li>
-            <li><input type="file"><img src="../imagenes/file.png" alt=""></li>
-            <li><input type="date"><img src="../imagenes/date.png" alt=""></li>
+            <li><input type="text" placeholder="Texto"></li>
+            <li><input type="email" placeholder="email@.com"></li>
+            <li><input type="password" placeholder="password"></li>
+            <li><input type="checkbox"></li>
+            <li><input type="radio"></li>
+            <li><input type="file"></li>
+            <li><input type="date"></li>
             <li><input type="submit"></li>
         </ol>
     </form>
-    <h2>atributos</h2>
-    <p>hay 4 atributos aparte del type y son:</p>
-    <form >
+
+    <h2>Atributos</h2>
+
+    <form>
         <ol>
-        <li><input type="text" required> <img src="../imagenes/required.png" alt=""> <p>required que obliga al usuario a escribir algo</p> </li> 
-        <li><input type="text" name="usser name"> <img src="../imagenes/name.png" alt=""> <p>es para que el servidor sepa e; nombre del campo</p></li>
-        <li><input type="text" placeholder="text"> <img src="../imagenes/placeholder.png" alt=""> <p>es un texto que desaparce cuando comienzas a escribir</p></li>
-        <li><input type="text" value="hola"> <img src="../imagenes/input value.png" alt=""> <p>es algo que guarda el servidor, por ahora no es tan reelevante hasta javascript</p></li>
+            <li><input type="text" required> <p>Obliga al usuario a escribir algo</p></li>
+            <li><input type="text" name="username"> <p>Nombre del campo para el servidor</p></li>
+            <li><input type="text" placeholder="Texto"> <p>Texto que desaparece al escribir</p></li>
+            <li><input type="text" value="hola"> <p>Valor inicial del input</p></li>
+        </ol>
         <input type="submit">
-    </ol>
-    </form>
-    <h3>atributo extra</h3>
-    <fom><ol>
-        <li><input type="text" required minlength="3"> <img src="../imagenes/minlength.png" alt=""> <p>es para determinar lo minimo de caracteres aceptados</p></li>
-        <input type="submit">
-    </ol>
     </form>
 
-    <h2>para terminar</h2>
-    <p>hay muuchos mas atrubutos extra como el de minlength pero ya son mas avanzados y se veran en otro archivo el cual esta en desarrollo</p>
-    <a href="../index.html">Pagina principal</a>
+    <h3>Atributo extra</h3>
+
+    <form>
+        <ol>
+            <li><input type="text" required minlength="3"> <p>Mínimo de caracteres</p></li>
+        </ol>
+        <input type="submit">
+    </form>
+
+    <h2>Para terminar</h2>
+
+    <p>
+        Hay muchos más atributos, pero se verán en otro archivo en desarrollo.
+    </p>
+
+    <a href="../index.html">Página principal</a>
+
 </body>
 </html>
